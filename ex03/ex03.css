@@ -1,0 +1,66 @@
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+p {
+    color: #aaa;
+}
+
+input, select {
+    position: relative;
+    width: 370px;
+    height: 50px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #bbb;
+    color: #888;
+}
+
+textarea {
+    position: relative;
+    width: 100%;
+}
+
+::placeholder {
+    position: absolute;
+    top: 50%;
+    translate: 0 -50%;
+    left: 10px;
+    transition: all 0.2s linear;
+
+}
+
+:focus::placeholder {
+    font-size: 10px;
+    top: 8px;
+}
+
+form {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 760px;
+}
+
+textarea::placeholder {
+    top: 20px;
+    box-sizing: border-box;
+}
+
+button {
+    margin: 10px auto;
+    padding: 15px 25px;
+    background-color: rgb(80, 80, 252);
+    border-radius: 99px;
+    color: #fff;
+    border: none;
+}
